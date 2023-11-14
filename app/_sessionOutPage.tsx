@@ -1,7 +1,8 @@
+"use client"
 import Image from 'next/image'
 
 export default function SessionOut() {
-  return <main className="flex min-h-screen flex-col items-center p-24">
+  return <>
     <div className="grid grid-rows-2 gap-8">
       <div className="slide-in-right ">
         <div className="after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div></div>
@@ -34,5 +35,5 @@ export default function SessionOut() {
     </div>
     <div className="slide-rotate"><div className="circle-object "></div></div>
 
-  </main>
+  </>
 }
