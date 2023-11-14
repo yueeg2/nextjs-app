@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-rotate
+ * ----------------------------------------
+ */
+
+.circle-object {
+  background-color: #feffff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid #feffff;
+  overflow: hidden;
+  box-shadow: 0px 0px 30px 20px #feffff;
+}
+.slide-rotate {
+  position: relative;
+  width: 50%;
+  animation: slide-rotate 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+    alternate-reverse both;
+}
+
+.slide-in-right {
+  position: relative;
+  width: 70%;
+  animation: slide-in-right 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+    alternate-reverse both;
+}
+.slide-in-right > div::after {
+  border-radius: 50%;
+}
+
+@keyframes slide-rotate {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(-200deg);
+  }
+}
+
+@keyframes slide-in-right {
+  0%{
+    transform: translateX(180px) ;
+  }
+  50% {
+    transform: translateX(0px)  ;
+  }
+  100% {
+    transform: translateX(-180px) ;
+  }
+}
