@@ -5,7 +5,7 @@ import React, { useState } from "react"
 import SessionOut from './_sessionOutPage'
 import SessionFillful from './_sessionFillfulPage'
 
-export default function () { 
+export default function Main () { 
 
   const [from_localStorage, setFrom_localStorage] = useState(window.localStorage.getItem('username') || null);
   

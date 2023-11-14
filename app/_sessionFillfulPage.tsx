@@ -2,7 +2,7 @@ import Image from 'next/image'
 import toast from 'react-hot-toast';
 
 
-export default function ({ user }: { user: any }) {
+export default function SessionFillful({ user }: { user: any }) {
 
 
   return (

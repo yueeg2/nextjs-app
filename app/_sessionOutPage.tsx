@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function () {
+export default function SessionOut() {
   return <main className="flex min-h-screen flex-col items-center p-24">
     <div className="grid grid-rows-2 gap-8">
       <div className="slide-in-right ">
