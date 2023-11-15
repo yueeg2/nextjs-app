@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 
-export default function SessionOut() {
+export default function SessionOut({ window }: { window: Window }) {
   return <>
     <div className="grid grid-rows-2 gap-8">
       <div className="slide-in-right ">

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import toast from 'react-hot-toast';
 
 
-export default function SessionFillful({ user }: { user: any }) {
+export default function SessionFillful({ user, window }: { user: string, window: Window }) {
 
 
   return (
