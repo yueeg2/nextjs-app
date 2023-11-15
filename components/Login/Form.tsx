@@ -34,7 +34,7 @@ export default function Form({ type }: { type: "login" | "forget_password" }) {
     if (checkUsername(username)) return;
     if (type === "login") {
       fetchBy("POST", {
-        url: `http://localhost:3001/api/auth`,
+        url: `http://${process.env.HOST}/api/auth`,
         body: {
           username: e.currentTarget.username?.value,
           password: e.currentTarget.password?.value,
