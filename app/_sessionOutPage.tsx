@@ -19,7 +19,7 @@ export default function SessionOut({ window }: { window: Window }) {
       </div>
       <div className="flex flex-row items-center ">
         <h1 className="text-xl py-5 px-2 font-mono">Please</h1>
-        <a className="group rounded-lg border px-5 py-3 hover:border-gray-100 hover:text-sky-400 dark:bg-slate-200 text-sky-600 font-bold hover:dark:bg-slate-50"
+        <a className="group rounded-lg border px-5 py-3 hover:border-gray-100 hover:text-sky-400 bg-slate-200 text-sky-600 font-bold hover:bg-slate-50"
           href="/login"> Sign In</a>
         <h1 className="text-xl py-5 px-2 font-mono">First</h1>
       </div>
